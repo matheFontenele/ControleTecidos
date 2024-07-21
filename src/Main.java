@@ -20,6 +20,12 @@ public class Main {
 
         estoque.adicionarPecas(1, maria);
 
+        estoque.exibirPecas();
+
         System.out.println(estoque.exibirPecaPorID(1));
+
+        System.out.println(estoque.exibirPecaPorNome("Blusa"));
+
+
     }
 }

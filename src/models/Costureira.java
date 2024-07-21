@@ -37,7 +37,7 @@ public class Costureira {
             Peca novaPeca = new Peca(nome, tecido.getCor());
             tecido.setQuantidadePorMetro(tecido.getQuantidadePorMetro() - quantidade);
             pecas.add(novaPeca);
-            System.out.println("Quantidade de "+novaPeca.getNome()+" - "+pecas.size());
+            System.out.println(novaPeca.getNome()+" - Adicionado ao estoque");
             System.out.println("Tecido restante de "+tecido.getCor()+" - "+tecido.getQuantidadePorMetro());
         }
     }

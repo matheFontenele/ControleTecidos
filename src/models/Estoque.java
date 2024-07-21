@@ -30,12 +30,16 @@ public class Estoque {
         return pecas.get(id);
     }
 
-//    //Buscar peça por nome
-//    public Peca exibirPecaPorNome(String nome){
-//        for (Map.Entry<Integer, Peca> entrada : pecas.entrySet()){
-//            if (entrada.getValue().)
-//        }
-//    }
+    //Buscar peça por nome
+    public Peca exibirPecaPorNome(String nome){
+        Peca pecaEncontrada = null;
+        for (Map.Entry<Integer, Peca> entrada : pecas.entrySet()){
+            if (entrada.getValue().getNome().equals(nome)) {
+                pecaEncontrada = new Peca(entrada.getValue().getNome(), entrada.getValue().getCor());
+            }
+        }
+        return pecaEncontrada;
+    }
 
     //Exibir peças do estoque
     public void exibirPecas(){
