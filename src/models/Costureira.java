@@ -36,9 +36,16 @@ public class Costureira {
         }else {
             Peca novaPeca = new Peca(nome, tecido.getCor());
             tecido.setQuantidadePorMetro(tecido.getQuantidadePorMetro() - quantidade);
+            estoqueMetro = estoqueMetro+quantidade;
             pecas.add(novaPeca);
             System.out.println(novaPeca.getNome()+" - Adicionado ao estoque");
             System.out.println("Tecido restante de "+tecido.getCor()+" - "+tecido.getQuantidadePorMetro());
         }
     }
+
+    //Verificar numero de peças e quantidade de tecido com costureira
+    public String estoqueCostureira(){
+        return "Exitem "+getPecas().size()+" peças com "+getNome()+" e "+getEstoqueMetro()+" metros de tecido com esta contureira";
+    }
+
 }

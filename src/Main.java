@@ -22,10 +22,9 @@ public class Main {
 
         estoque.exibirPecas();
 
-        System.out.println(estoque.exibirPecaPorID(1));
-
-        System.out.println(estoque.exibirPecaPorNome("Blusa"));
-
+        //System.out.println(estoque.exibirPecaPorID(1));
+        //System.out.println(estoque.exibirPecaPorNome("Blusa"));
+        System.out.println(maria.estoqueCostureira());
 
     }
 }
